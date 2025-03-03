@@ -1,20 +1,48 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function App() {
+// Importe suas telas aqui (verifique os caminhos dos arquivos!)
+import InicialScreen from './screens/InicialScreen';
+import LoginScreen from './screens/LoginScreen';
+import CadastroSenhaScreen from './screens/CadastroSenha';
+import AjudaScreen from './screens/AjudaScreen';
+import TelaMedicamentosScreen from './screens/TelaMedicamentos';
+
+const Stack = createNativeStackNavigator();
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Inicial">
+        <Stack.Screen
+          name="Inicial"
+          component={InicialScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Cadastro"
+          component={CadastroSenhaScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Ajuda"
+          component={AjudaScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="TelaMedicamentos"
+          component={TelaMedicamentosScreen}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
