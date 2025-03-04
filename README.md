@@ -5,7 +5,7 @@ Nome dos membros do grupo:
 3. Luís Marcelo Bartz de Ávila,
 4. Rolf Santana Sokolonski,
 5. Renan Leite Cardoso Augusto.
-## "Ifound!" – Aplicativo Multiplataforma Mobile
+## Ifound! – Aplicativo Multiplataforma Mobile
 Objetivo:
 Permitir que usuários de remédios que tem, entre os sintomas de suas doenças, a perda de memória, seja amena ou grave, localizem o local de armazenamento de seus remédios.
 Neste primeiro momento Ifound! é um MVP. Com o desenvolvimento, se tem a intenção de acrescentar funções como alertas de horários de consumo de remédios e monitoramentos, através de dispositivos vestíveis, entre outros.
