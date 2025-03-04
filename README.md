@@ -21,6 +21,7 @@ O aplicativo pode ser aberto em um dispositivo físico se nele estiver instalado
 
 
 Uso
+
 Para começar é necessário o cadastro do usuário.
 Após isso, é possível acessar a tela de login.
 Se esquecer o login, é possível solicitar recuperação (essa função no aplicativo como MVP, simula uma mensagem por e-mail para esse fim).
