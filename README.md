@@ -1,10 +1,10 @@
 # PTI 4º Semestre 
 ## Nome dos membros do grupo:
-Caroleen  Ahmad Fadel
-Eriberto Simão da Silva
-Luís Marcelo Bartz de Ávila
-Rolf Santana Sokolonski
-Renan Leite Cardoso Augusto
+Caroleen  Ahmad Fadel.
+Eriberto Simão da Silva.
+Luís Marcelo Bartz de Ávila.
+Rolf Santana Sokolonski.
+Renan Leite Cardoso Augusto.
 ### Ifound! – Aplicativo Multiplataforma Mobile
 Objetivo:
 Permitir que usuários de remédios que tem, entre os sintomas de suas doenças, a perda de memória, seja amena ou grave, localizem o local de armazenamento de seus remédios.
