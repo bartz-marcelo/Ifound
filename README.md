@@ -17,3 +17,16 @@ O aplicativo pode ser aberto em um dispositivo físico se nele estiver instalado
 3. A partir desse momento, é possível testar as funcionalidades do aplicativo e qualquer alteração no IDE, como o VS Code, é visível no aplicativo, através de atualizações.
 4. Se preferir, aparecerá opções para uso de outros meios, como emuladores virtuais.
 
+![image](https://github.com/user-attachments/assets/02eb6953-cab7-4d36-bedb-5309f577c96e)
+
+
+Uso
+Para começar é necessário o cadastro do usuário.
+Após isso, é possível acessar a tela de login.
+Se esquecer o login, é possível solicitar recuperação (essa função no aplicativo como MVP, simula uma mensagem por e-mail para esse fim).
+Na tela “Seus Medicamentos”, digite o nome do medicamento e o local de armazenamento e, depois para salvar, aperte” Salvar”.  Os dados serão armazenados no aparelho, em banco de dados local, Async-Storage, um componente da biblioteca do React Native.
+Para pesquisar ou delatar basta digitar o nome do medicamento e apertar os botões correspondentes.
+Com os desenvolvimentos de novas funções e maior número de dados, será necessário migrar para um banco de dados mais robusto.
+Assista o vídeo para demonstração.
+
+
