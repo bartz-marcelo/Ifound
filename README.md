@@ -25,7 +25,7 @@ O aplicativo pode ser aberto em um dispositivo físico se nele estiver instalado
 ![image](https://github.com/user-attachments/assets/02eb6953-cab7-4d36-bedb-5309f577c96e)
 
 
-Uso
+## Uso
 
 Para começar é necessário o cadastro do usuário.
 
