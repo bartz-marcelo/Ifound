@@ -1,9 +1,9 @@
 # PTI 4º Semestre 
 ## Nome dos membros do grupo:
-Caroleen  Ahmad Fadel.
-Eriberto Simão da Silva.
-Luís Marcelo Bartz de Ávila.
-Rolf Santana Sokolonski.
+Caroleen  Ahmad Fadel,
+Eriberto Simão da Silva,
+Luís Marcelo Bartz de Ávila,
+Rolf Santana Sokolonski,
 Renan Leite Cardoso Augusto.
 ### Ifound! – Aplicativo Multiplataforma Mobile
 Objetivo:
