@@ -38,7 +38,7 @@ Na tela “Seus Medicamentos”, digite o nome do medicamento e o local de armaz
 
 Para pesquisar ou delatar basta digitar o nome do medicamento e apertar os botões correspondentes.
 
-Com os desenvolvimentos de novas funções e maior número de dados, será necessário migrar para um banco de dados mais robusto.
+Com os desenvolvimentos de novas funções e maior número de dados, será necessário migrar para um banco de dados mais robusto. Para tornar o vídeo de demonstração do MVP mais fluído, não foram adicionadas regras adicionais de login além das de cadastro.
 
 Assista o vídeo para demonstração.
 
