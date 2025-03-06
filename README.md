@@ -14,7 +14,7 @@ Neste primeiro momento Ifound! é um MVP. Com o desenvolvimento, se tem a inten�
 ### Instalação do Ambiente de Desenvolvimento:
 
 Para desenvolver o aplicativo foi escolhido o React Native Expo por oferecer ferramentas de fácil manipulação.
-Importante salientar a necessidade de ter o Node.js instalado globalmente, pois ele é o ambiente de execução JavaScript que o Expo utiliza para executar seus comandos e ferramentas.
+Importante salientar a necessidade de ter o Node.js instalado globalmente, pois ele é o ambiente de execução JavaScript que o Expo utiliza para executar seus comandos e ferramentas. Indispensável ter, também, instalado o NPM, instalador e gerenciador de bibliotecas JavaScript.
 
 O aplicativo pode ser aberto em um dispositivo físico se nele estiver instalado o aplicativo Expo Go, com download gratuito nas principais lojas de aplicativos, ou através de um emulador virtual, mas, para isso, é necessário, a instalação do Android Studio, por exemplo. Para poupar recursos do hardware, optou-se, no caso do Ifound!, pelo uso do aplicativo.
 
