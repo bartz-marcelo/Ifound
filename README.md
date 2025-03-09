@@ -40,6 +40,8 @@ Para pesquisar ou delatar basta digitar o nome do medicamento e apertar os botõ
 
 Com os desenvolvimentos de novas funções e maior número de dados, será necessário migrar para um banco de dados mais robusto. Para tornar o vídeo de demonstração do MVP mais fluído, não foram adicionadas regras adicionais de login além das de cadastro. Também foi permitido o cadastro de mais de um usuário pelo mesmo motivo, demonstrar o funcionamento.
 
+Necessário informar que o número de telas foi reduzido para dinamizar o desenvolvimento do projeto devido o pouco tempo, não sendo desenvolvida a tela de alertas.
+
 Assista o vídeo de demonstração.
 
 https://youtu.be/VrBVleb512o
