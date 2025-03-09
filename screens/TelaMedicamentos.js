@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert, Modal, Keyboard, BackHandler } from 'react-native'; // Importando BackHandler
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, Alert, Modal, Keyboard, BackHandler } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -36,9 +36,9 @@ function TelaMedicamentosScreen() {
             await AsyncStorage.setItem(`@Medicamento_${nomeMedicamento}`, JSON.stringify(novoMedicamento));
             setNomeMedicamento('');
             setLocalArmazenamento('');
-            Keyboard.dismiss(); // Oculta o teclado após salvar
-            setMensagemSalvoVisible(true); // Para mostrar mensagem "Medicamento Salvo" - usando Alert.alert abaixo para simplicidade.
-            Alert.alert('Sucesso', 'Medicamento Salvo'); // Mensagem "Medicamento Salvo" como Alert.
+            Keyboard.dismiss(); 
+            setMensagemSalvoVisible(true); 
+            Alert.alert('Sucesso', 'Medicamento Salvo'); 
 
         } catch (error) {
             console.error('Erro ao salvar medicamento:', error);
@@ -73,7 +73,7 @@ function TelaMedicamentosScreen() {
             await AsyncStorage.removeItem(`@Medicamento_${nomeMedicamento}`);
             setNomeMedicamento('');
             setLocalArmazenamento('');
-            Keyboard.dismiss(); // Oculta o teclado após deletar
+            Keyboard.dismiss(); 
             setMensagemDeletadoVisible(true);
         } catch (error) {
             console.error('Erro ao deletar medicamento:', error);
@@ -88,21 +88,15 @@ function TelaMedicamentosScreen() {
     const handleSair = async () => {
         console.log('Botão Sair pressionado.');
 
-        try {
-            // *** PONTO DE EXTENSÃO: ADICIONE AQUI CÓDIGO PARA SALVAR DADOS ADICIONAIS NO AsyncStorage ANTES DE SAIR, SE NECESSÁRIO! ***
-            // *** EXEMPLO:
-            // await AsyncStorage.setItem('@MyApp_algum_dado_adicional', JSON.stringify(algumDadoAdicional));
-            // console.log('Dados adicionais salvos no AsyncStorage antes de sair.');
-
-
-            // Navegar para a tela de Login
-            navigation.replace('Login'); // OU navigation.navigate('Login') - 'replace' é geralmente melhor para "Sair"
+        try {                        
+  
+            navigation.replace('Login'); 
             console.log('Navegando para a Tela de Login.');
 
         } catch (error) {
-            console.error('Erro ao sair:', error); // Log de erro genérico ao sair
+            console.error('Erro ao sair:', error); 
             Alert.alert('Erro ao Sair', 'Ocorreu um erro ao tentar sair do aplicativo. Tente novamente.');
-            navigation.replace('Login'); // Mesmo em caso de erro, tenta navegar para a tela de login
+            navigation.replace('Login'); 
         }
     };
 
@@ -182,7 +176,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'red',
-        alignItems: 'center', // Mantém o alinhamento central dos itens no container principal
+        alignItems: 'center', 
         paddingTop: 20,
     },
     title: {
@@ -211,8 +205,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 40,
         borderRadius: 10,
         marginBottom: 15,
-        width: '80%', // *** ADICIONADO: LARGURA FIXA PARA OS BOTÕES (80% da largura da tela) ***
-        alignSelf: 'center', // *** ADICIONADO: CENTRALIZAR OS BOTÕES HORIZONTALMENTE ***
+        width: '80%', 
+        alignSelf: 'center', 
     },
     buttonText: {
         color: 'white',

@@ -55,7 +55,7 @@ function LoginScreen() {
                 keyboardType="email-address"
                 value={email}
                 onChangeText={setEmail}
-                placeholderTextColor="grey" // Cor do placeholder cinza para contraste no fundo branco
+                placeholderTextColor="grey" 
             />
             <TextInput
                 style={styles.input}
@@ -63,7 +63,7 @@ function LoginScreen() {
                 secureTextEntry
                 value={senha}
                 onChangeText={setSenha}
-                placeholderTextColor="grey" // Cor do placeholder cinza para contraste no fundo branco
+                placeholderTextColor="grey" 
             />
 
             <TouchableOpacity style={styles.button} onPress={handleLogin}>
@@ -83,7 +83,7 @@ function LoginScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'red', // Fundo vermelho
+        backgroundColor: 'red', 
         padding: 20,
         justifyContent: 'flex-start',
         paddingTop: 80,
@@ -99,15 +99,15 @@ const styles = StyleSheet.create({
     input: {
         width: '100%',
         height: 40,
-        borderColor: 'lightgrey', // Mudei para 'lightgrey' para borda suave no fundo branco
+        borderColor: 'lightgrey', 
         borderWidth: 1,
         marginBottom: 20,
         paddingLeft: 10,
-        color: 'black', // Cor do texto digitado preta para contraste no fundo branco
-        backgroundColor: 'white', // *** FUNDO BRANCO DOS INPUTS - ADICIONADO! ***
+        color: 'black', 
+        backgroundColor: 'white', 
     },
     button: {
-        backgroundColor: 'grey', // Botões cinzas
+        backgroundColor: 'grey', 
         width: '100%',
         height: 40,
         borderRadius: 5,
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     buttonText: {
-        color: 'white', // Texto branco nos botões
+        color: 'white', 
         fontWeight: 'bold',
     },
 });

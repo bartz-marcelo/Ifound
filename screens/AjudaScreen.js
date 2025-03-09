@@ -12,7 +12,7 @@ function AjudaScreen() {
         if (mensagemStatus) {
             const timer = setTimeout(() => {
                 setMensagemStatus('');
-                setEmail(''); // *** ADICIONADO: LIMPAR O CAMPO DE EMAIL! ***
+                setEmail(''); 
             }, 3000); // 3 segundos
             return () => clearTimeout(timer);
         }
@@ -23,11 +23,11 @@ function AjudaScreen() {
             const usersJSON = await AsyncStorage.getItem('@MyApp_users');
             const storedUsers = usersJSON ? JSON.parse(usersJSON) : [];
 
-            console.log('usersJSON:', usersJSON); // *** ADICIONADO: LOG DO usersJSON ***
-            console.log('storedUsers:', storedUsers); // *** ADICIONADO: LOG DO storedUsers ***
+            console.log('usersJSON:', usersJSON); 
+            console.log('storedUsers:', storedUsers); 
 
             const emailEncontrado = storedUsers.some(user => {
-                console.log('user.email:', user.email); // *** ADICIONADO: LOG DE user.email ***
+                console.log('user.email:', user.email); 
                 return user.email === email;
             });
 
@@ -83,14 +83,14 @@ const styles = StyleSheet.create({
         backgroundColor: 'red',
         padding: 20,
         justifyContent: 'flex-start',
-        alignItems: 'flex-start', // Alinhar à esquerda no container principal
+        alignItems: 'flex-start', 
         paddingTop: 80,
     },
     tituloMensagem: {
         fontSize: 20,
         fontWeight: 'bold',
         color: 'white',
-        textAlign: 'left', // Alinhar texto à esquerda
+        textAlign: 'left', 
         marginBottom: 10,
     },
     inputEmail: {
@@ -109,11 +109,11 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 5,
         marginBottom: 20,
-        width: '100%', // Largura total para os botões terem o mesmo tamanho
-        alignItems: 'center', // Centralizar texto no botão
+        width: '100%', 
+        alignItems: 'center', 
     },
     textoBotaoConcluir: {
-        fontSize: 20, // Mantive fontSize 20, corrigindo a solicitação de fontSize 0
+        fontSize: 20, 
         fontWeight: 'bold',
         color: 'white',
     },
@@ -122,8 +122,8 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 5,
-        width: '100%', // Largura total para os botões terem o mesmo tamanho
-        alignItems: 'center', // Centralizar texto no botão
+        width: '100%', 
+        alignItems: 'center', 
     },
     textoBotaoRetornarLogin: {
         fontSize: 20,
@@ -131,21 +131,21 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     mensagemStatusContainer: {
-        position: 'absolute', // Posicionamento absoluto para centralizar na tela
+        position: 'absolute', 
         top: 0,
         left: 0,
         right: 0,
         bottom: 0,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'rgba(0,0,0,0.5)', // Opcional: fundo semi-transparente para destaque
+        backgroundColor: 'rgba(0,0,0,0.5)', 
     },
     mensagemStatusText: {
-        fontSize: 20, // Mantive fontSize 20, como solicitado
+        fontSize: 20, 
         fontWeight: 'bold',
-        color: 'red', // *** ALTERADO: COR DA FONTE PARA VERMELHO! ***
+        color: 'red', 
         textAlign: 'center',
-        backgroundColor: 'white', // *** ALTERADO: FUNDO PARA BRANCO! ***
+        backgroundColor: 'white', 
         padding: 20,
         borderRadius: 10,
     },
